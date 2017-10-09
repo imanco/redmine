@@ -3,12 +3,14 @@ os: linux
 files:
   - source: /
     destination: /var/www/redmine
+  - source: vhost/redmine.conf
+    destination: /etc/httpd/conf.d/redmine.conf
 hooks:
   BeforeInstall:
     - location: tmp/stop_service.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: tmp/stop_service.sh
+    - location: tmp/start_service.sh
       timeout: 300
       runas: root
