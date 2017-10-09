@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/redmine
-  - source: vhost/redmine.conf
+  - source: redmine.conf
     destination: /etc/httpd/conf.d/redmine.conf
 hooks:
   BeforeInstall:
