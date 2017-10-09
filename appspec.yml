@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/redmine
   - source: redmine.conf
-    destination: /etc/httpd/conf.d/redmine.conf
+    destination: /etc/httpd/conf.d/
 hooks:
   BeforeInstall:
     - location: tmp/stop_service.sh
