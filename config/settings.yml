@@ -24,7 +24,7 @@ app_title:
 app_subtitle:
   default: Project management
 welcome_text:
-  default: Ian Test
+  default:
 login_required:
   default: 0
   security_notifications: 1
